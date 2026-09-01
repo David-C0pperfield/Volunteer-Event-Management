@@ -28,7 +28,7 @@ def create_app():
 
     #importing modules here to avoid circular references, register blueprints of routes
     from . import views
-    app.register_blueprint(views.bp)
+    app.register_blueprint(views.vem)
 
     # @app.errorhandler(404) 
     # # inbuilt function which takes error as parameter 
