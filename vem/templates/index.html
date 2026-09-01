@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .login .box {
+      width: 656px;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      padding: 48px 10px 48px 10px;
+      flex: 0 0 auto;
+      background: #ffffff;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    .login .box .buttongroup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      width: auto;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .login .box .buttongroup .button {
+      width: 354px;
+      height: 64px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 10px 10px 10px;
+      flex: 0 0 auto;
+      background: #8aea83;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      color: #508f3d;
+      max-width: 334px;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .login .box .buttongroup .no-account {
+      color: #508f3d;
+      max-width: 235px;
+      font-size: 16.00px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .login .box .buttongroup .forget {
+      color: #508f3d;
+      max-width: 235px;
+      font-size: 16.00px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .login .box .logingroup {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      width: auto;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .login .box .logingroup .inputwithlabel {
+      width: 309px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .login .box .logingroup .inputwithlabel .frame {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 10px 10px 10px;
+      align-self: stretch;
+      flex: 0 0 auto;
+      background: #ffffff;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .login .box .logingroup .inputwithlabel>label:nth-child(1) {
+      color: #508f3d;
+      max-width: 309px;
+      font-size: 16.00px;
+      font-weight: 400;
+    }
+
+    .login .box .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: auto;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .login .box .logo .vem {
+      color: #508f3d;
+      max-width: 93px;
+      font-size: 32.00px;
+      font-weight: 700;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="anchor" id="login"></a>
+  <div class="login">
+    <div class="box">
+      <div class="logo">
+        <p class="vem">VEM</p>
+      </div>
+      <form></form>
+      <div class="logingroup">
+        <div class="inputwithlabel">
+          <label>E-mail</label>
+          <input type="email" class="frame" />
+        </div>
+        <div class="inputwithlabel">
+          <label>password</label>
+          <input type="password" class="frame" />
+        </div>
+      </div>
+      <div class="buttongroup">
+        <button class="button" type="button">Login</button>
+        <p class="forget">Forget password?</p>
+        <a href="#" class="no-account">Don’t have an account?</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
