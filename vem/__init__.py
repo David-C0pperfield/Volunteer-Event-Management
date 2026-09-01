@@ -15,7 +15,7 @@ def create_app():
     # MYSQL configurations, use class Config from config.py, follow config_template.py for the format of config.py, config.py is in gitignore, it will not be committed to github
     app.config.from_object('vem.config.Config')
 
-    database.init_app(app)
+    # database.init_app(app)
     
     bootstrap = Bootstrap5(app)
     
