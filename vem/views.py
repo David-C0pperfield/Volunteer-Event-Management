@@ -9,13 +9,5 @@ vem = Blueprint('main', __name__)
 
 @vem.route('/')
 def index():
-    saved_property_ids = []
-    if session.get('user'):
-        print("User in session:", session['user'])
-        user_id = get_current_user_id()
-        saved_properties = get_saved_for_user(user_id)
-        saved_property_ids = [s.listingId for s in saved_properties]
-
-
     return render_template(
         'index.html')
